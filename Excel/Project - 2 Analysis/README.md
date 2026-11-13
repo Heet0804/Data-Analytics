@@ -47,17 +47,6 @@ It includes detailed information on:
 #### 🔄 Transform
 
 - Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
-    - 📊 data_jobs_all
-
-        ![Power Query - data_jobs_all](../Images/Power-Query-1.png)
-
-    - 🛠️ data_job_skills
-
-        ![Power Query - data_job_skills](../Images/Power-Query-2.png)
-
-    - 📝 Applied steps
-
-        ![Applied Steps](../Images/Applied-Steps.png)
 
 #### 🔗 Load
 
