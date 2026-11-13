@@ -27,9 +27,9 @@ A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel
 
 | # | Practice set | Questions | Topics |
 |---|---|---|---|
-| 1 | [Cricket League](SQL/Practice%201/README.md) | 60 | Teams, players, matches and performances |
-| 2 | [Company Project Tracker](SQL/Practice%202/README.md) | 30 | Departments, employees, projects and assignments |
-| 3 | [Student Grades](SQL/Practice%203/README.md) | 30 | Teachers, students, courses and enrollments |
+| 1 | [Cricket League](SQL/Practice%20-%201/README.md) | 60 | Teams, players, matches and performances |
+| 2 | [Company Project Tracker](SQL/Practice%20-%202/README.md) | 30 | Departments, employees, projects and assignments |
+| 3 | [Student Grades](SQL/Practice%20-%203/README.md) | 30 | Teachers, students, courses and enrollments |
 
 Each set goes from basic `SELECT` queries to joins, subqueries, views and indexes. The Cricket League and Company Project Tracker sets go on to transactions, stored procedures and triggers. Student Grades goes on to CTEs and window functions.
 
@@ -52,8 +52,8 @@ Data-Analytics/
 │   ├── Project - 3 IPL Analysis/
 │   └── Project - 4 School Analysis/
 ├── SQL/
-│   ├── Practice 1/
-│   ├── Practice 2/
-│   └── Practice 3/
+│   ├── Practice - 1/
+│   ├── Practice - 2/
+│   └── Practice - 3/
 └── Images/
 ```
