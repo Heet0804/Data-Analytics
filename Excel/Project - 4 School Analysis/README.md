@@ -2,7 +2,7 @@
 
 An interactive Excel dashboard that shows how 300 students in Classes 8 to 10 are doing. It covers marks, attendance, fees, cities and admissions, and every number updates when you click a slicer for Class, Section or Gender.
 
-![School Performance Dashboard](../Images/4_School_Dashboard.png)
+![School Performance Dashboard](../../Images/Project%20-%204%20Excel/4.%20School%20Performance%20Dashboard.png)
 
 ## ❓ Questions the Dashboard Answers
 
@@ -39,32 +39,32 @@ Numbers below are for all 300 students (no slicers selected).
 ### 1. Grade Distribution
 Number of students in each grade. Most students fall in grade C (149), followed by D (69) and B (55). Only 7 reach grade A.
 
-![Grade Distribution](../Images/4_Grade_Distribution.png)
+![Grade Distribution](../../Images/Project%20-%204%20Excel/4.%20Grade%20Distribution.png)
 
 ### 2. Avg Marks By Subject
 Average mark in each of the five subjects. The spread is narrow, from 61.7 in Maths to 69.2 in English.
 
-![Avg Marks By Subject](../Images/4_Avg_Marks_By_Subject.png)
+![Avg Marks By Subject](../../Images/Project%20-%204%20Excel/4.%20Avg%20Marks%20By%20Subject.png)
 
 ### 3. Student by City
 Student count per city, sorted high to low. Mumbai leads with 121, followed by Thane (67), Navi Mumbai (57), Pune (35) and Nashik (20).
 
-![Student by City](../Images/4_Student_by_City.png)
+![Student by City](../../Images/Project%20-%204%20Excel/4.%20Student%20by%20City.png)
 
 ### 4. Fee Due By Class
 Share of the pending fee by class. Class 10 owes ₹5,68,750, Class 9 owes ₹4,75,000 and Class 8 owes ₹3,40,000.
 
-![Fee Due By Class](../Images/4_Fee_Due_By_Class.png)
+![Fee Due By Class](../../Images/Project%20-%204%20Excel/4.%20Fee%20Due%20By%20Class.png)
 
 ### 5. Attendance Bands
 Students grouped by attendance: below 75% (47), 75 to 85% (134), 85 to 95% (104) and 95% and above (15).
 
-![Attendance Bands](../Images/4_Attendance_Bands.png)
+![Attendance Bands](../../Images/Project%20-%204%20Excel/4.%20Attendance%20Bands.png)
 
 ### 6. Admission by Year
 Students by year of admission. Admissions grew from 48 in 2019 to a peak of 77 in 2021, then fell to 36 in 2023.
 
-![Admission by Year](../Images/4_Admission_By_Year.png)
+![Admission by Year](../../Images/Project%20-%204%20Excel/4.%20Admission%20by%20Year.png)
 
 ## ⚙️ How the Dashboard Is Built
 
