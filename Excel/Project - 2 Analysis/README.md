@@ -70,7 +70,7 @@ It includes detailed information on:
 - 📈 There is a positive correlation between the number of skills requested in job postings and the median salary, particularly in roles like Senior Data Engineer and Data Scientist.
 - 💼 Roles that require fewer skills, like Business Analyst, tend to offer lower salaries, suggesting that more specialized skill sets command higher market value.
 
-    ![Salary vs Skills](../Images/Salary-vs-Skills.png)
+    ![Salary vs Skills](../../Images/Project%20-%202%20Excel/2.%20Salary%20vs%20Skills.png)
 
 #### 🤔 So What
 
@@ -106,7 +106,7 @@ It includes detailed information on:
 - 💼 Job roles like Senior Data Engineer and Data Scientist command higher median salaries both in the US and internationally, showcasing the global demand for high-level data expertise.
 - 💰 The salary disparity between US and Non-US roles is particularly notable in high-tech jobs, which might be influenced by the concentration of tech industries in the US.
 
-    ![Salary Analysis](../Images/Salary-Analysis.png)
+    ![Salary Analysis](../../Images/Project%20-%202%20Excel/2.%20Salary%20Analysis.png)
 
 #### **🤔 So What**
 
@@ -132,7 +132,7 @@ It includes detailed information on:
 - 💻 SQL and Python dominate as top skills in data-related jobs, reflecting their foundational role in data processing and analysis.
 - ☁️ Emerging technologies like AWS and Azure also show significant presence, underlining the industry's shift towards cloud services and big data technologies.
 
-    ![Skill Job Analysis](../Images/Skill_Job_Analysis.png)
+    ![Skill Job Analysis](../../Images/Project%20-%202%20Excel/2.%20Skill%20Job%20Analysis.png)
 
 #### 🤔So What
 
@@ -156,7 +156,7 @@ It includes detailed information on:
 - 💰 Higher median salaries are associated with skills like Python, Oracle, and SQL, suggesting their critical role in high-paying tech jobs.
 - 📉 Skills like PowerPoint and Word have the lowest median salaries and likelihood, indicating less specialization and demand in high-salary sectors.
 
-    ![Skill Salary Analysis](../Images/Skill_Salary_Analysis.png)
+    ![Skill Salary Analysis](../../Images/Project%20-%202%20Excel/2.%20Skill%20Salary%20Analysis.png)
 
 ### 🤔So What
 
