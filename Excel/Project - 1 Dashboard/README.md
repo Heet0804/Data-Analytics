@@ -1,6 +1,6 @@
 # Excel Salary Dashboard
 
-![Salary Dashboard](../Images/Project - 1 Excel/1. Salary-Dashboard.png)
+![Salary Dashboard](../../Images/Project%20-%201%20Excel/1.%20Salary-Dashboard.png)
 
 ## Introduction
 
@@ -34,7 +34,7 @@ The dataset used for this project contains real-world data science job informati
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-<img src="../Images/Bar-Chart.png" width="850" alt="Salary Dashboard Bar Chart">
+<img src="../../Images/Project%20-%201%20Excel/1.%20Salary%20Dashboard%20Bar%20Chart.png" width="850" alt="Salary Dashboard Bar Chart">
 
 - 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
@@ -43,7 +43,7 @@ The dataset used for this project contains real-world data science job informati
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-![Country Map Chart](../Images/Map-Chart.png)
+![Country Map Chart](../../Images/Project%20-%201%20Excel/1.%20Country%20Map%20Chart.png)
 
 - 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
@@ -81,7 +81,7 @@ IF(
 - 🔍 **Unique List Generation:** This Excel formula employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
 - **🔢 Formula Purpose:** This formula gives a list of unique job schedule types.
 
-<img src="../Images/Count-Chart.png" width="500" alt="Count of Job Schedule Type">
+<img src="../../Images/Project%20-%201%20Excel/1.%20Count%20of%20Job%20Schedule%20Type.png" width="500" alt="Count of Job Schedule Type">
 
 ### ❎ Data Validation
 
@@ -92,8 +92,8 @@ IF(
     - 🚫 Incorrect or inconsistent entries are prevented
     - 👥 Overall usability of the dashboard is enhanced
 
-<img src="../Images/Data-Validation.png" width="500" alt="Salary Dashboard Data Validation">
+<img src="../../Images/Project%20-%201%20Excel/1.%20Salary%20Dashboard%20Data%20Validation.png" width="500" alt="Salary Dashboard Data Validation">
 
 ## Conclusion
 
-I created this dashboard to showcase insights into salary trends across various data-related job titles. Utilizing data from an Excel course, this dashboard allows users to make informed decisions about their career paths. Exploring the functionalities to understand how location and job type influence salaries. 
+I created this dashboard to showcase insights into salary trends across various data-related job titles. Utilizing data from an Excel course, this dashboard allows users to make informed decisions about their career paths. Exploring the functionalities to understand how location and job type influence salaries.
