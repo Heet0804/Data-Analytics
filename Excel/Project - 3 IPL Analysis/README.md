@@ -2,7 +2,7 @@
 
 An interactive Excel dashboard that analyses 11 seasons of the Indian Premier League (2008 to 2018). It answers one simple question: **what really drives wins in the IPL?**
 
-![IPL Dashboard](../Images/3_IPL_Dashboard.png)
+![IPL Dashboard](../../Images/Project%20-%203%20Excel/3.%20IPL%20Dashboard.png)
 
 ## Dataset
 
@@ -32,7 +32,7 @@ An interactive Excel dashboard that analyses 11 seasons of the Indian Premier Le
 
 ### 1️⃣ Matches won by each team
 
-![Matches Won by Team](../Images/3_Matches_Won.png)
+![Matches Won by Team](../../Images/Project%20-%203%20Excel/3.%20Matches%20Won%20by%20Team.png)
 
 - **Mumbai Indians** have the most wins (98), followed by **Chennai Super Kings** (90) and **Kolkata Knight Riders** (86).
 - Wins are split by the toss decision of the match (bat or field).
@@ -40,14 +40,14 @@ An interactive Excel dashboard that analyses 11 seasons of the Indian Premier Le
 
 ### 2️⃣ Toss decision
 
-![Toss Decision](../Images/3_Toss_Decision.png)
+![Toss Decision](../../Images/Project%20-%203%20Excel/3.%20Toss%20Decision.png)
 
 - Captains chose to **field first in 413 of 696 matches (59.3%)** and to bat first in 283 (40.7%).
 - Fielding first is clearly the preferred choice.
 
 ### 3️⃣ Top venues
 
-![Top Venues](../Images/3_Top_Venues.png)
+![Top Venues](../../Images/Project%20-%203%20Excel/3.%20Top%20Venues.png)
 
 - **M Chinnaswamy Stadium** hosted the most matches (73), followed by Eden Gardens (70) and Feroz Shah Kotla (67).
 - Chinnaswamy is very one-sided: 64 of its matches had a field-first decision against only 9 for bat first.
@@ -56,14 +56,14 @@ An interactive Excel dashboard that analyses 11 seasons of the Indian Premier Le
 
 ### 4️⃣ Man of the Match awards
 
-![Man of the Match Awards](../Images/3_MoM_Awards.png)
+![Man of the Match Awards](../../Images/Project%20-%203%20Excel/3.%20Man%20of%20the%20Match%20Awards.png)
 
 - **CH Gayle** leads with 20 awards, then **AB de Villiers** (18), **RG Sharma** (16) and **YK Pathan** (16).
 - DA Warner (15), MS Dhoni (14) and SK Raina (14) complete the top group.
 
 ### 5️⃣ Title winners
 
-![Title Winners](../Images/3_Title_Winners.png)
+![Title Winners](../../Images/Project%20-%203%20Excel/3.%20Title%20Winners.png)
 
 - **Chennai Super Kings** and **Mumbai Indians** have 3 titles each.
 - Kolkata Knight Riders have 2.
