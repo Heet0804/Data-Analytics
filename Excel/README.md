@@ -14,13 +14,7 @@ Five Excel projects that turn raw data into clear answers. Each project folder h
 
 ## 🖼️ Dashboards
 
-| Project 1 | Project 3 |
-|:---------:|:---------:|
-| <img src="../Images/Project%20-%201%20Excel/1.%20Dashboard.png" width="450" alt="Project 1 Salary Dashboard"> | <img src="../Images/Project%20-%203%20Excel/3.%20Dashboard.png" width="450" alt="Project 3 IPL Dashboard"> |
-
-| Project 4 | Project 5 |
-|:---------:|:---------:|
-| <img src="../Images/Project%20-%204%20Excel/4.%20Dashboard.png" width="450" alt="Project 4 School Dashboard"> | <img src="../Images/Project%20-%205%20Excel/5.%20Dashboard.png" width="450" alt="Project 5 Bike Sales Dashboard"> |
+<img src="../Images/Project%20-%205%20Excel/5.%20Dashboard.png" width="600" alt="Project 5 Bike Sales Dashboard">
 
 ## 🗂️ Folder Contents
 
