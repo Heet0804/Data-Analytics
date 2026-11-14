@@ -1,6 +1,6 @@
 # 📊 Data Analytics
 
-A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel part is four dashboard and analysis projects. The SQL part is three practice sets with 120 questions in total.
+A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel part is five dashboard and analysis projects. The SQL part is three practice sets with 120 questions in total.
 
 ![School Performance Dashboard](Images/Project%20-%204%20Excel/4.%20School%20Performance%20Dashboard.png)
 
@@ -8,7 +8,7 @@ A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel
 
 | Folder | What it has | Tools |
 |---|---|---|
-| [📗 Excel](Excel/README.md) | 4 projects: dashboards and analysis on salaries, IPL matches and school data | Pivot Tables, Power Query, DAX, Power Pivot, slicers, charts, formulas |
+| [📗 Excel](Excel/README.md) | 5 projects: dashboards and analysis on salaries, IPL matches, school data and bike sales | Pivot Tables, Power Query, DAX, Power Pivot, slicers, charts, formulas |
 | [🗄️ SQL](SQL/README.md) | 3 practice sets: 120 questions from basic to advanced | MySQL / MariaDB |
 | 🖼️ Images | Screenshots used in the project READMEs | |
 
@@ -22,6 +22,7 @@ A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel
 | 2 | [Data Jobs Analysis](Excel/Project%20-%202%20Analysis/README.md) | How skills, regions and pay are linked in data jobs |
 | 3 | [IPL Analysis](Excel/Project%20-%203%20IPL%20Analysis/README.md) | What drives wins in 11 IPL seasons (2008 to 2018) |
 | 4 | [School Performance Dashboard](Excel/Project%20-%204%20School%20Analysis/README.md) | Marks, attendance and fees of 300 students |
+| 5 | [Bike Sales Dashboard](Excel/Project%20-%205%20Bike%20Sales%20Analysis/README.md) | Who buys a bike, by income, commute distance, age and region (1,026 customers) |
 
 ## 🗄️ SQL Practice Sets
 
@@ -50,7 +51,8 @@ Data-Analytics/
 │   ├── Project - 1 Dashboard/
 │   ├── Project - 2 Analysis/
 │   ├── Project - 3 IPL Analysis/
-│   └── Project - 4 School Analysis/
+│   ├── Project - 4 School Analysis/
+│   └── Project - 5 Bike Sales Analysis/
 ├── SQL/
 │   ├── Practice - 1/
 │   ├── Practice - 2/
