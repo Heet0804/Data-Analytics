@@ -10,7 +10,7 @@ An interactive Excel dashboard that studies 1,026 customers and shows who buys a
 - Does income differ between male and female customers?
 - Does commute distance affect who buys a bike?
 - Which age group buys the most bikes?
-- Do the answers change by marital status, region or education?
+- Do the answers change by marital status, region or education? 
 
 ## 🗂️ Dataset
 
