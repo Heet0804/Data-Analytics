@@ -2,6 +2,8 @@
 
 A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel part is five dashboard and analysis projects. The SQL part is three practice sets with 120 questions in total.
 
+The **SQL + Excel** part combines both: a MySQL database is queried to answer 20 questions, and the results are turned into an Excel dashboard.
+
 ![School Performance Dashboard](Images/Project%20-%204%20Excel/4.%20School%20Performance%20Dashboard.png)
 
 ## 📂 What's Inside
@@ -10,6 +12,7 @@ A collection of hands-on data analytics work in **Excel** and **SQL**. The Excel
 |---|---|---|
 | [📗 Excel](Excel/README.md) | 5 projects: dashboards and analysis on salaries, IPL matches, school data and bike sales | Pivot Tables, Power Query, DAX, Power Pivot, slicers, charts, formulas |
 | [🗄️ SQL](SQL/README.md) | 3 practice sets: 120 questions from basic to advanced | MySQL / MariaDB |
+| [🔗 SQL + Excel](SQL%20%2B%20Excel/README.md) | 1 project: a MySQL database of IPL data, 20 SQL questions and an Excel dashboard | MySQL, Joins, Window Functions, Excel Charts, Dashboard Design |
 | 🖼️ Images | Screenshots used in the project READMEs | |
 
 ---
@@ -38,10 +41,23 @@ Each set goes from basic `SELECT` queries to joins, subqueries, views and indexe
 
 ---
 
+## 🔗 SQL + Excel Projects
+
+| # | Project | Database | What it shows |
+|---|---|---|---|
+| 1 | [IPL Data Analysis](SQL%20%2B%20Excel/IPL%20Data%20Analysis/README.md) | `IPL_ANALYSIS` | Champions, Orange and Purple Cap winners, venues and squads of the IPL from 2008 to 2025, answered with 20 SQL questions and shown in an Excel dashboard |
+
+![IPL Data Analysis Dashboard](Images/Project%20-%201%20SQL%20%2B%20Excel/1.%20Dashboard.png)
+
+Each project is set up from numbered `.sql` files, one per table, each with its `CREATE TABLE` and `INSERT` statements. Run them in order, solve the questions, then build the dashboard in Excel. Details are in each project's README.
+
+---
+
 ## 🚀 How to Use This Repo
 
 - **Excel:** Open the `.xlsx` file inside any project folder. Excel 365 or 2021 is needed for XLOOKUP and the treemap chart in Project 3.
 - **SQL:** Open a practice set folder, load the setup `.sql` files in the order given in its README, then work through the questions.
+- **SQL + Excel:** Open a project folder, run the numbered `.sql` files from `00` upwards, then work through `Questions_Answers.sql`. The dashboard images are in the `Images/` folder.
 
 ## 🗂️ Repository Structure
 
@@ -57,5 +73,7 @@ Data-Analytics/
 │   ├── Practice - 1/
 │   ├── Practice - 2/
 │   └── Practice - 3/
+├── SQL + Excel/
+│   └── IPL Data Analysis/
 └── Images/
 ```
