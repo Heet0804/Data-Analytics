@@ -71,14 +71,6 @@ Line chart of customers by age bracket, split into No and Yes. Middle Age is the
 - 📄 `Pre-Dashboard`: the three pivot tables and their charts
 - 📄 `Dashboard`: the final one-page dashboard with slicers
 
-## ⚠️ Limitations
-
-- **The data has 26 duplicate rows.** The table has 1,026 rows but only 1,000 unique customers, and I did not remove the duplicates before building the pivots. After removing them, 481 of 1,000 (48.1%) bought a bike, and the findings stay almost the same, but the counts on the dashboard are slightly too high.
-- **The "Adolescent" label is wrong.** The youngest customer is 25, so this group is really young adults (under 31), not adolescents.
-- **This shows links, not causes.** A short commute or middle age goes with buying a bike. It does not prove that either one causes it.
-- **Income is not adjusted for region or currency.** The data does not say which currency is used.
-- **The dashboard shows counts, not rates.** A bigger bar can just mean a bigger group (for example, there are far more Middle Age customers than Old ones).
-
 ## 🚀 How to Use
 
 1. Open [Project-5.xlsx](Project-5.xlsx) in Excel (Excel 2010 or later is needed for slicers).
