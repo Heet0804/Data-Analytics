@@ -50,45 +50,6 @@ ECOMMERCE_ORDERS (one table, one row per order)
 | `E-Commerce_Orders_Analysis.xlsx` | The finished Excel dashboard |
 | `dashboard_background_final_2765x1016.png` | Background image used on the dashboard |
 
-## Setup
-
-1. Copy `ecommerce_orders.csv` into the MySQL uploads folder. The script expects `C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/`. Change the path in `Database_Creation.sql` if yours is different.
-2. Run `Database_Creation.sql`. It creates the table and loads the data.
-
-```sql
-SOURCE Database_Creation.sql;
-```
-
-3. Check the import. These three checks are at the end of the script:
-
-```sql
-SELECT COUNT(*), MIN(order_date), MAX(order_date) FROM ecommerce_orders;   -- 48360, 2025-01-01, 2025-12-31
-SELECT order_status, COUNT(*) FROM ecommerce_orders GROUP BY order_status; -- Delivered 40281, Returned 4830, Cancelled 3249
-SELECT COUNT(*) FROM ecommerce_orders WHERE customer_rating IS NULL;       -- 10947
-```
-
-4. Open `E_Commerce_Analysis_Scripts.sql` and run the queries one at a time. None of them changes the data, so they can be run in any order.
-
-> The load script turns blank cells into `NULL` (`NULLIF`) and reads dates in both `dd-mm-yyyy` and `yyyy-mm-dd` format.
-
-## The Questions
-
-| Group | Question | Main SQL used |
-|---|---|---|
-| A | **KPIs:** revenue, orders placed, delivered orders, average order value, cancellation rate, return rate, average rating, average delivery days | `SUM`, `COUNT`, `AVG`, `CASE` |
-| B | Which days of the week are the busiest? | `DAYNAME`, `GROUP BY` |
-| C | Which hours are the shopping rush hours, and how deep are the discounts then? | `HOUR`, `AVG` |
-| D | Which product category brings in the most revenue (in %)? | Subquery for the total |
-| E | Which 10 cities earn the most? | `ORDER BY`, `LIMIT` |
-| F | How does revenue move month by month, and do the festive months change it? | `MONTHNAME`, `GROUP BY` |
-| G | Which categories get returned the most? | `CASE` inside `SUM` |
-| H | Why are orders cancelled? | `GROUP BY`, percentage with subquery |
-| I | How do customers prefer to pay? | `GROUP BY`, percentage with subquery |
-| J | Do deeper discounts hurt order quality? | Subquery with `CASE` to build discount bands |
-| K | Which 5 brands earn the most? | `GROUP BY` two columns, `LIMIT` |
-| L | Which 5 brands earn the least? | `ORDER BY ASC`, `LIMIT` |
-| M | Who are the top 5 sellers by revenue, and how are they rated? | `GROUP BY`, `AVG`, `LIMIT` |
-
 ## Dashboard
 
 The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M and puts them on one page, with slicers for month, city, category and payment mode. J is answered in SQL only. The numbers below are for the full year, with no slicer applied.
@@ -103,12 +64,9 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M a
 - **Average customer rating: 4.40** (taken only from delivered orders that have a rating).
 - **Average delivery time: 3.25 days** (taken from delivered and returned orders).
 
-<table>
-  <tr>
-    <td align="center"><b>Daily trend for total orders (B)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Daily%20Trend%20for%20Total%20Orders.png" width="450" alt="Daily Trend for Total Orders"></td>
-    <td align="center"><b>Hourly trend for orders and discounts (C)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Hourly%20trend%20for%20orders%20and%20discounts.png" width="450" alt="Hourly Trend for Orders and Discounts"></td>
-  </tr>
-</table>
+| **Daily trend for total orders (B)** | **Hourly trend for orders and discounts (C)** |
+|:---:|:---:|
+| <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Daily%20Trend%20for%20Total%20Orders.png" width="450" alt="Daily Trend for Total Orders"> | <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Hourly%20trend%20for%20orders%20and%20discounts.png" width="450" alt="Hourly Trend for Orders and Discounts"> |
 
 ### 2️⃣ Daily trend for total orders (B)
 
@@ -123,12 +81,9 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M a
 - The quietest hour is 4 AM with 228 orders.
 - The average discount stays flat all day, between **19.2% and 20.5%**, so the rush hours are not driven by deeper discounts.
 
-<table>
-  <tr>
-    <td align="center"><b>% of revenue by category (D)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20%25%20of%20revenue%20by%20category.png" width="450" alt="% of Revenue by Category"></td>
-    <td align="center"><b>Top 10 cities by revenue (E)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Top%2010%20cities%20by%20revenue.png" width="450" alt="Top 10 Cities by Revenue"></td>
-  </tr>
-</table>
+| **% of revenue by category (D)** | **Top 10 cities by revenue (E)** |
+|:---:|:---:|
+| <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20%25%20of%20revenue%20by%20category.png" width="450" alt="% of Revenue by Category"> | <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Top%2010%20cities%20by%20revenue.png" width="450" alt="Top 10 Cities by Revenue"> |
 
 ### 4️⃣ % of revenue by category (D)
 
@@ -144,12 +99,9 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M a
 - The next ones are Hyderabad (₹84.4 lakh) and Chennai (₹78.8 lakh).
 - The data has only 12 cities, so the top 10 hold 92.8% of the revenue. Only Jaipur and Chandigarh are left out.
 
-<table>
-  <tr>
-    <td align="center"><b>Monthly revenue trend (F)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Monthly%20Revenue%20Trend.png" width="450" alt="Monthly Revenue Trend"></td>
-    <td align="center"><b>Return rate by category (G)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Return%20rate%20by%20category.png" width="450" alt="Return Rate by Category"></td>
-  </tr>
-</table>
+| **Monthly revenue trend (F)** | **Return rate by category (G)** |
+|:---:|:---:|
+| <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Monthly%20Revenue%20Trend.png" width="450" alt="Monthly Revenue Trend"> | <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Return%20rate%20by%20category.png" width="450" alt="Return Rate by Category"> |
 
 ### 6️⃣ Monthly revenue trend (F)
 
@@ -165,12 +117,9 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M a
 - **Grocery & Gourmet is the lowest at 1.34%**, then Books & Stationery at 2.49%.
 - Fashion alone makes up **58.6% of all 4,830 returns**.
 
-<table>
-  <tr>
-    <td align="center"><b>Why orders are cancelled (H)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Why%20orders%20are%20cancelled%20.png" width="450" alt="Why Orders Are Cancelled"></td>
-    <td align="center"><b>% of orders by payment mode (I)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20%25%20of%20orders%20by%20payment%20mode.png" width="450" alt="% of Orders by Payment Mode"></td>
-  </tr>
-</table>
+| **Why orders are cancelled (H)** | **% of orders by payment mode (I)** |
+|:---:|:---:|
+| <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Why%20orders%20are%20cancelled%20.png" width="450" alt="Why Orders Are Cancelled"> | <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20%25%20of%20orders%20by%20payment%20mode.png" width="450" alt="% of Orders by Payment Mode"> |
 
 ### 8️⃣ Why orders are cancelled (H)
 
@@ -184,12 +133,9 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M a
 - COD follows at 17.54%, Wallet at 7.48% and Net Banking at 7.38%.
 - Everything except COD is paid online, which makes up about 82% of orders.
 
-<table>
-  <tr>
-    <td align="center"><b>Top 5 brands by revenue (K)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Top%205%20brands%20by%20revenue.png" width="450" alt="Top 5 Brands by Revenue"></td>
-    <td align="center"><b>Bottom 5 brands (L)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Bottom%205%20brands.png" width="450" alt="Bottom 5 Brands"></td>
-  </tr>
-</table>
+| **Top 5 brands by revenue (K)** | **Bottom 5 brands (L)** |
+|:---:|:---:|
+| <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Top%205%20brands%20by%20revenue.png" width="450" alt="Top 5 Brands by Revenue"> | <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Bottom%205%20brands.png" width="450" alt="Bottom 5 Brands"> |
 
 ### 🔟 Top 5 brands by revenue (K)
 
@@ -204,11 +150,9 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, H, I, K, L and M a
 - **Four of the five are Books & Stationery brands.** Amul (Grocery & Gourmet) is the exception.
 - These brands sell low-priced items, so they earn little even with 400 to 630 orders each. Apple earns about 79 times as much as Camlin.
 
-<table>
-  <tr>
-    <td align="center"><b>Top 5 sellers by revenue (M)</b><br><img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.Top%205%20sellers%20by%20revenue.png" width="450" alt="Top 5 Sellers by Revenue"></td>
-  </tr>
-</table>
+| **Top 5 sellers by revenue (M)** |
+|:---:|
+| <img src="../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.Top%205%20sellers%20by%20revenue.png" width="450" alt="Top 5 Sellers by Revenue"> |
 
 ### 1️⃣2️⃣ Top 5 sellers by revenue (M)
 
