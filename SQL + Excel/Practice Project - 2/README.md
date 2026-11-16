@@ -103,9 +103,14 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, I and K and puts t
 - **Cancellation rate: 12.15%**, which is about 1 in every 8 requests.
 - **Average driver rating: 4.53** (taken only from completed trips that have a rating).
 
-### 2️⃣ Trips by day of week (B)
+<table>
+  <tr>
+    <td align="center"><b>Trips by day of week (B)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Trips%20by%20Day%20of%20Week.png" width="450" alt="Trips by Day of Week"></td>
+    <td align="center"><b>Hourly trips and surge (C)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Hourly%20Trips.png" width="450" alt="Hourly Trips"></td>
+  </tr>
+</table>
 
-![Trips by Day of Week](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Trips%20by%20Day%20of%20Week.png)
+### 2️⃣ Trips by day of week (B)
 
 - **Saturday is the busiest day** with 7,702 trips, followed by **Friday** with 7,353.
 - Tuesday is the quietest with 6,454 trips.
@@ -113,16 +118,19 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, I and K and puts t
 
 ### 3️⃣ Hourly trips and surge (C)
 
-![Hourly Trips](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Hourly%20Trips.png)
-
 - There are **two rush periods:** the morning peak at **8 to 10 AM** (about 2,950 trips an hour at 8 and 9) and a bigger evening peak at **5 to 8 PM**.
 - **7 PM is the busiest hour** with 3,916 trips, and 6 PM is close behind with 3,898.
 - The quietest hours are 3 and 4 AM, with about 250 trips each.
 - Surge is highest in the rush hours, at an average of about **1.21x**, and 8 PM reaches 1.23x. Outside the rush it stays near 1.08x.
 
-### 4️⃣ Revenue by vehicle type (D)
+<table>
+  <tr>
+    <td align="center"><b>Revenue by vehicle type (D)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Revenue%20by%20Vehicle.png" width="450" alt="Revenue by Vehicle"></td>
+    <td align="center"><b>Top 10 pickup areas by revenue (E)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Top-10%20Pickup%20Areas.png" width="450" alt="Top-10 Pickup Areas"></td>
+  </tr>
+</table>
 
-![Revenue by Vehicle](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Revenue%20by%20Vehicle.png)
+### 4️⃣ Revenue by vehicle type (D)
 
 - **Mini** earns the most with **33.3%** of the revenue, followed by **Sedan** with **29.9%** and **SUV** with **20.1%**.
 - **Auto (8.7%)** and **Bike (8.0%)** together bring in under 17%.
@@ -130,15 +138,18 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, I and K and puts t
 
 ### 5️⃣ Top 10 pickup areas by revenue (E)
 
-![Top-10 Pickup Areas](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Top-10%20Pickup%20Areas.png)
-
 - **Lower Parel** is the top earner with about **₹13.8 lakh**, even though **Andheri** has more completed trips (4,880 against 3,668).
 - The next ones are Andheri (₹11.7 lakh), Bandra (₹9.8 lakh), Thane (₹9.7 lakh) and Borivali (₹9.4 lakh).
 - Thane and Borivali rank high with far fewer trips, which points to long and expensive rides from the suburbs.
 
-### 6️⃣ Monthly revenue (F)
+<table>
+  <tr>
+    <td align="center"><b>Monthly revenue (F)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Monthly%20Revenue.png" width="450" alt="Monthly Revenue"></td>
+    <td align="center"><b>Cancellation rate by weather (G)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Cancellation%20by%20Weather.png" width="450" alt="Cancellation by Weather"></td>
+  </tr>
+</table>
 
-![Monthly Revenue](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Monthly%20Revenue.png)
+### 6️⃣ Monthly revenue (F)
 
 - **July is the best month** with about **₹13.9 lakh**, followed by August (₹13.7 lakh).
 - **February is the weakest** at about ₹9.2 lakh.
@@ -146,23 +157,24 @@ The Excel dashboard takes the results of A, B, C, D, E, F, G, I and K and puts t
 
 ### 7️⃣ Cancellation rate by weather (G)
 
-![Cancellation by Weather](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Cancellation%20by%20Weather.png)
-
 - **Heavy Rain has the highest cancellation rate at 18.7%**, then Light Rain at 15.6%.
 - Clear (10.6%) and Cloudy (10.6%) are almost the same.
 - Heavy Rain cancels nearly **1.8 times as often** as clear weather.
 
-### 8️⃣ Payment mode (I)
+<table>
+  <tr>
+    <td align="center"><b>Payment mode (I)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Payment%20Mode.png" width="450" alt="Payment Mode"></td>
+    <td align="center"><b>Top 5 busiest routes (K)</b><br><img src="../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Top-5%20Busiest%20Routes.png" width="450" alt="Top-5 Busiest Routes"></td>
+  </tr>
+</table>
 
-![Payment Mode](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Payment%20Mode.png)
+### 8️⃣ Payment mode (I)
 
 - **UPI is the favourite** with **49.9%** of completed trips, which is about half.
 - Wallet follows at 18.4%, Cash at 17.2% and Card at 14.5%.
 - Digital payments (UPI, Wallet and Card) make up about 83% of trips.
 
 ### 9️⃣ Top 5 busiest routes (K)
-
-![Top-5 Busiest Routes](../../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Top-5%20Busiest%20Routes.png)
 
 - **Andheri to Airport T2** is the busiest route with 682 completed trips, and the reverse direction is second with 615.
 - The rest of the top 5 are Lower Parel to Bandra (604), Andheri to Powai (584) and Lower Parel to Dadar (580).
