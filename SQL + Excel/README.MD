@@ -8,12 +8,13 @@ This folder combines the two skills. Each project builds a **MySQL database**, a
 |---|---------|----------|-----------|---------------|--------|------|
 | 1️⃣ | **IPL Data Analysis** | `IPL_ANALYSIS` | 20 (6 easy, 8 medium, 6 hard) | IPL champions, Orange and Purple Cap winners, venues and squads from 2008 to 2025 | Joins, `GROUP BY`, subqueries, window functions, Excel charts, dashboard design | [README](IPL%20Data%20Analysis/README.md) |
 | 2️⃣ | **Ride Hailing Analysis** | `RIDE_HAILING` | 13 groups (A to M) on 48,260 Mumbai trips | Revenue, trips, cancellations, surge pricing, routes and drivers of a cab, auto and bike service in 2025 | Aggregation, `CASE WHEN`, date functions, subqueries, Excel charts, dashboard design | [README](Practice%20Project%20-%202/README.MD) |
+| 3️⃣ | **E-Commerce Orders Analysis** | `E_COMMERCE` | 13 groups (A to M) on 48,360 Indian online orders | Revenue, orders, returns, cancellations, discounts, brands and sellers of an online marketplace in 2025 | Aggregation, `CASE WHEN`, date functions, subqueries, Excel charts, dashboard design | [README](Practice%20Project%20-%203/README.md) |
 
 ## 🖼️ Dashboards
 
-| Project 1 | Project 2 |
-|:---------:|:---------:|
-| <img src="../Images/Project%20-%201%20SQL%20%2B%20Excel/1.%20Dashboard.png" width="450" alt="Project 1 IPL Dashboard"> | <img src="../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Dashboard.png" width="450" alt="Project 2 Ride Hailing Dashboard"> |
+| Project 1 | Project 2 | Project 3 |
+|:---------:|:---------:|:---------:|
+| <img src="../Images/Project%20-%201%20SQL%20%2B%20Excel/1.%20Dashboard.png" width="450" alt="Project 1 IPL Dashboard"> | <img src="../Images/Project%20-%202%20SQL%20%2B%20Excel/2.%20Dashboard.png" width="450" alt="Project 2 Ride Hailing Dashboard"> | <img src="../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Dashboard.png" width="450" alt="Project 3 E-Commerce Dashboard"> |
 
 ## 🔄 How These Projects Work
 
@@ -24,7 +25,7 @@ This folder combines the two skills. Each project builds a **MySQL database**, a
 
 > 💡 The numbered file format (`00_CREATE_DATABASE.sql`, `01_...`, `02_...`) is the same in every project, so any project can be set up the same way.
 >
-> Project 2 has one table only, so it uses a single `Database_Creation.sql` that creates the table and loads `ride_trips.csv`. Its questions are in `Ride_Hailing_Scripts.sql`.
+> Projects 2 and 3 have one table only, so each uses a single `Database_Creation.sql` that creates the table and loads its CSV (`ride_trips.csv` and `ecommerce_orders.csv`). Their questions are in `Ride_Hailing_Scripts.sql` and `E_Commerce_Analysis_Scripts.sql`.
 
 ## 🗂️ Folder Contents
 
@@ -32,6 +33,7 @@ This folder combines the two skills. Each project builds a **MySQL database**, a
 |--------|----------|
 | `IPL Data Analysis` | Seven setup `.sql` files, `Questions_Answers.sql`, the dashboard data and a README |
 | `Practice Project - 2` | `Database_Creation.sql`, `Ride_Hailing_Scripts.sql`, the trips CSV and Excel files, the query write-up, the dashboard and a README |
+| `Practice Project - 3` | `Database_Creation.sql`, `E_Commerce_Analysis_Scripts.sql`, the orders CSV and Excel files, the query write-up, the dashboard and a README |
 
 Screenshots used in the READMEs are stored in the `Images/` folder at the root of the repository.
 
