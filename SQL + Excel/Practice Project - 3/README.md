@@ -2,7 +2,7 @@
 
 A two-step project. First, a **MySQL table** of 48,360 orders from an Indian online marketplace (all of 2025) is loaded and queried to answer 13 business questions. Then the results are taken into **Excel** and turned into a one-page dashboard.
 
-![E-Commerce Dashboard](../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Dashboard.png)
+![E-Commerce Dashboard](../../Images/Project%20-%203%20SQL%20%2B%20Excel/3.%20Dashboard.png?v=2)
 
 ## Dataset
 
